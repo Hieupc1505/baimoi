@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	<style type="text/css">
+		body{
+			margin: 0; 
+			padding: 0; 
+		}
+		
+		.ul{
+			 
+			background: #333; 
+			list-style: none; 
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			
+		}
+		
+		a, .dropbnt{
+			display: block; 
+			padding: 14px 16px; 
+			color: white; 
+			text-decoration: none; 
+			border: 1px solid yellow; 
+			
+		}
+		
+		.dropdown{
+			float: left; 
+			
+			
+		}
+		
+		.dropbox{
+			display:none ; 
+			width: 200px; 
+			position: absolute; 
+			background: green; 
+			border: 1px solid red;
+			
+		}
+		
+		.dropbox a{
+			float: none; 
+			display: block; 
+			background: red;
+			
+		}
+		.dropbox a:hover{
+			background: green; 
+			cursor: pointer; 
+			text-decoration: underline; 
+		}
+		.dropdown:hover .dropbox{
+			display: block; 
+		}
+		.dropbnt{
+			padding: 23px 14px; 
+		}
+		@media screen and (max-width: 600px){
+			.ul{
+				display: block; 
+			}
+			a{
+				display: block; 
+			}
+			
+		}
+	</style>
+<body>
+	<div class="ul">
+		<a href="">Trang chủ</a>
+		<a href="">Biệt thự</a>
+		<a href="">Nhà Phố</a>
+		<a href="">Nhà cấp 4</a>
+		<a href="">Nhà ông</a>
+		<a href="">Nhà vườn</a>
+		<a href="">Nhà Nông Thôn</a>
+		<div class="dropdown">
+			<span class="dropbnt">Nội thất</span>
+			<div class="dropbox">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
